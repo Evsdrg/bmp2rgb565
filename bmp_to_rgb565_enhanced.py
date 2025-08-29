@@ -497,7 +497,7 @@ def main():
         if len(sys.argv) < 3:
             print("用法: python bmp_to_rgb565_enhanced.py input.bmp output.h [format] [byte_order]")
             print("format 可选: RGB565 (默认), RGB565_8BIT, RGB332, GRAY8")
-            print("byte_order 可选: little (默认) 或 big (对RGB565和RGB565_8BIT有效)")
+            print("byte_order 可选: little (默认) 或 big (所有格式均支持字节序选择)")
             sys.exit(1)
         
         input_file = sys.argv[1]
